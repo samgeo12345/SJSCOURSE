@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html,body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    font-family:'Poppins',Verdana;
+}
+.bodylogin{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:whitesmoke;
+}
+.logindiv{
+    text-align:center;
+    padding:3%;
+    width:30%;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    background-color:white;
+    border-radius:15px;
+}
+.hrflex{
+    display:flex;
+    justify-content:center;
+}
+.hrflex table{
+    width:95%;
+}
+.hrflex table tr .hrtd{
+    width:45%;
+}
+.hrflex td hr{
+    width:100%;
+}
+.inputdiv{
+    margin:2% 2%;
+    margin-top:5%;
+    position:relative;
+}
+.inputdiv input{
+    width:98%;
+    block-size:36px;
+    border-radius:5px;
+    border-style:solid;
+    border-color:lightgray;
+    outline:none;
+    transition:.3s ease-in-out;
+}
+label{
+    position:absolute;
+    left:15px;
+    padding:0px 2px;
+    pointer-events:none;
+    background-color:white;
+    color:lightgray;
+    font-size:12px;
+    transform:translateY(-50%);
+    top:50%;
+    transition:.3s ease-in-out;
+    z-index:1;
+}
+.inputdiv input:focus~label,
+.inputdiv input:valid~label{
+    top:1%;
+    font-size:10px;
+    color:blue;
+}
+.inputdiv input:focus{
+    border-color:blue;
+}
+.inputdiv input:hover{
+    border-color:blue;
+}
+.inputdiv:hover{
+    color:blue;
+}
+.loginbuttondiv button{
+    width:100%;
+    block-size:40px;
+    color:white;
+    background-color:blue;
+    border-color:blue;
+    border-style:solid;
+    font-weight:bold;
+    border-radius:25px;
+}
+.loginbuttondiv button:hover{
+    background-color:white;
+}
+.loginbuttondiv,.googlebuttondiv,.microsoftbuttondiv{
+    padding:2%;
+}
+.googlebuttondiv button,.microsoftbuttondiv button{
+    width:100%;
+    block-size:40px;
+    border-radius:25px;
+    border-style:solid;
+    font-weight:bold;
+    border-color:lightgray;
+    background-color:whitesmoke;
+}
+.logindiv div p{
+    font-size:x-small;
+    margin-top:-1%;
+    margin-right:2%;
+}
