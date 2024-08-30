@@ -9,12 +9,15 @@
        <script src="https://kit.fontawesome.com/76f5d35c55.js" crossorigin="anonymous"></script>
     </head>
     <body class="bodylogin">
-        <div class="logindiv">
+        <div class="logindiv" id="loginform">
             <h1 style="margin-top:0;">Login</h1>
-            <div class="inputdiv"><input type="text" required><label for="">Username</label></div>
-            <div class="inputdiv"><input type="password" required><label for="">Password</label></div>
-            <div style="text-align:right;"><p>forget password?</p></div>
-            <div class="loginbuttondiv"><button>LOGIN</button></div>
+            <form>
+            <div class="inputdiv"><input id="username" type="text" required><label id="user" for="">Username</label></div>
+            <div class="inputdiv"><input id="password" type="password" required><label id="pass" for="">Password</label></div>
+            <div style="text-align:right;"><p><a href="">forget password?</a></p></div>
+            <div class="loginbuttondiv"><button type="submit" id="login">LOGIN</button></div>
+            </form>
+            <div><p>New to the website? <a href="#" id="signinform">create account</a></p></div>
             <div class="hrflex">
             <table>
                 <tr>
@@ -28,5 +31,29 @@
             <div class="googlebuttondiv"><button>Google</button></div>
             <div class="microsoftbuttondiv"><button>Microsoft</button></div>
         </div>
+        <div id="signindiv">
+            <h1 style="margin-top:0;">Sign up</h1>
+            <form>
+            <div class="inputdiv"><input id="email" type="email" required><label id="user2" for="">Email</label></div>
+            <div class="inputdiv"><input id="passwords" type="password" required><label id="pass2" for="">Password</label></div>
+            <div style="display:flex;justify-content:center;margin:2%;padding-top:5%;">
+            <div class="loginbuttondiv2"><button type="button" id="loginback">LOGIN</button></div>
+            <div class="signinbuttondiv"><button type="submit" id="signin">SIGN UP</button></div>
+            </div>
+            </form>
+            <div class="hrflex">
+            <table>
+                <tr>
+                    <td class="hrtd"><hr></td>
+                    <td>or</td>
+                    <td class="hrtd"><hr></td>
+                </tr>
+            </table>
+            </div>
+            <p>continue with</p>
+            <div class="googlebuttondiv"><button>Google</button></div>
+            <div class="microsoftbuttondiv"><button>Microsoft</button></div>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
