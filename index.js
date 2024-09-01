@@ -95,3 +95,84 @@ document.addEventListener("DOMContentLoaded",function(){
         tablescroll.scrollBy({left:100,behavior:'smooth'});
     });
 });
+document.addEventListener("DOMContentLoaded",function(){
+    const left2=document.getElementById("left2");
+    const right2=document.getElementById("right2");
+    const tablescroll2=document.getElementById("tablescroll2");
+    left2.addEventListener("click",function(){
+        tablescroll2.scrollBy({left:-150,behavior:'smooth'});
+    });
+    right2.addEventListener("click",function(){
+        tablescroll2.scrollBy({left:150,behavior:'smooth'});
+    });
+});
+document.addEventListener("DOMContentLoaded",function(){
+    const ps=document.getElementById("ps1");
+    const divs=document.getElementById("divs1");
+    const imgs1=document.getElementById("imgs1");
+    divs.addEventListener("mouseover",function(event){
+        imgs1.style.opacity="0.4";
+        imgs1.style.transition=".3s ease-in-out";
+        ps.innerHTML='<i class="fa-solid fa-arrow-up-right-from-square"></i> <strong>WORKSHOP</strong><br>Explore the foundations of the World Wide Web, from its history and structure to the technologies that power it. This course covers essential web technologies like HTML, CSS, JavaScript, and web protocols, providing you with the knowledge to understand and navigate the digital landscape of the internet.';
+    });
+    divs.addEventListener("mouseout",function(){
+        imgs1.style.opacity="";
+        ps.innerHTML="";
+    });
+});
+document.addEventListener("DOMContentLoaded",function(){
+    const ps2=document.getElementById("ps2");
+    const divs2=document.getElementById("divs2");
+    const imgs2=document.getElementById("imgs2");
+    divs2.addEventListener("mouseover",function(event){
+        imgs2.style.opacity="0.4";
+        imgs2.style.transition=".3s ease-in-out";
+        ps2.innerHTML='<i class="fa-solid fa-arrow-up-right-from-square"></i> <strong>MAKING PORTFOLIO</strong><br>Create a compelling portfolio to showcase your skills, projects, and achievements. Learn to design a visually appealing and user-friendly website that reflects your personal brand and stands out to potential employers or clients. Master the tools and techniques to highlight your expertise and make a strong impression online.';
+    });
+    divs2.addEventListener("mouseout",function(){
+        imgs2.style.opacity="";
+        ps2.innerHTML="";
+    });
+});
+document.addEventListener("DOMContentLoaded",function(){
+    const ps3=document.getElementById("ps3");
+    const divs3=document.getElementById("divs3");
+    const imgs3=document.getElementById("imgs3");
+    divs3.addEventListener("mouseover",function(event){
+        imgs3.style.opacity="0.4";
+        imgs3.style.transition=".3s ease-in-out";
+        ps3.innerHTML='<i class="fa-solid fa-arrow-up-right-from-square"></i> <strong>CREATING WEBSITE</strong><br>Delve into web development by learning both frontend and backend technologies. Gain skills in HTML, CSS, JavaScript, and server-side programming to create dynamic and responsive websites. Understand how to build and deploy full-stack applications, ensuring seamless user interactions and robust functionality.';
+    });
+    divs3.addEventListener("mouseout",function(){
+        imgs3.style.opacity="";
+        ps3.innerHTML="";
+    });
+});
+document.addEventListener("DOMContentLoaded",function(){
+    const ps4=document.getElementById("ps4");
+    const divs4=document.getElementById("divs4");
+    const imgs4=document.getElementById("imgs4");
+    divs4.addEventListener("mouseover",function(event){
+        imgs4.style.opacity="0.5";
+        imgs4.style.transition=".3s ease-in-out";
+        ps4.innerHTML='<i class="fa-solid fa-arrow-up-right-from-square"></i> <strong>WORKSHOP</strong><br>This quote emphasizes the importance of proactive action and creativity in shaping one’s own future. Its a great reminder for developers and creators to take charge of their journey and craft the future they desire through innovation and purposeful effort.';
+    });
+    divs4.addEventListener("mouseout",function(){
+        imgs4.style.opacity="";
+        ps4.innerHTML="";
+    });
+});
+document.addEventListener("DOMContentLoaded",function(){
+    const ps5=document.getElementById("ps5");
+    const divs5=document.getElementById("divs5");
+    const imgs5=document.getElementById("imgs5");
+    divs5.addEventListener("mouseover",function(event){
+        imgs5.style.opacity="0.5";
+        imgs5.style.transition=".3s ease-in-out";
+        ps5.innerHTML='<i class="fa-solid fa-arrow-up-right-from-square"></i> <strong>WORKSHOP</strong><br>Embrace your unique qualities and become the best version of yourself. Cultivate traits like creativity, respect, calmness, and bravery, and strive to be free, happy, and true to who you are. Discover what you truly want and shape your path with positivity and purpose.';
+    });
+    divs5.addEventListener("mouseout",function(){
+        imgs5.style.opacity="";
+        ps5.innerHTML="";
+    });
+});

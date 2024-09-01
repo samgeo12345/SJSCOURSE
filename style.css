@@ -159,7 +159,7 @@ label{
 .navelements{
     top:0;
     width:100%;
-    z-index:1000;
+    z-index:2000;
     position:fixed;
     display:flex;
     flex-wrap:wrap;
@@ -279,19 +279,16 @@ label{
 .maindiv3 .tablediv{
     overflow-x:scroll;
     width:100%;
-    -ms-overflow-style:none;
-}
-.maindiv3 .tablediv::-webkit-scrollbar{
-    display:none;
 }
 .maindiv3 .button1{
     position: absolute; /* Fixed position relative to the viewport */
-    right: 0px; /* Distance from the right edge of the viewport */
+    right:0px; /* Distance from the right edge of the viewport */
     background-color:white;
     color:blue;
     top:50%;
     border: none;
-    padding: 14px 15px;
+    opacity:0.8;
+    padding:15px 20px;
     outline:none;
     cursor: pointer;
     border-radius:100%;
@@ -301,12 +298,13 @@ label{
 }
 .maindiv3 .button0{
     position: absolute; /* Fixed position relative to the viewport */
-    left: 0px; /* Distance from the right edge of the viewport */
+    left:0px; /* Distance from the right edge of the viewport */
     background-color:white;
     color:blue;
     top:50%;
     border: none;
-    padding: 14px 15px;
+    padding:15px 20px;
+    opacity:0.8;
     outline:none;
     font-size:larger;
     border-radius:100%;
@@ -314,6 +312,83 @@ label{
     cursor: pointer;
     z-index: 1000;
 }
+.maindiv3 .button0:active,.maindiv3 .button1:active,
+.maindiv4 .button01:active,.maindiv4 .button11:active{
+    opacity:unset;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+}
 .maindiv3 table div strong{
     font-size:16px;
+}
+.maindiv4{
+    padding:2%;
+    position:relative;
+}
+.tablediv2{
+    overflow-x:scroll;
+}
+.tablediv2 table div{
+    overflow:hidden;
+    border-radius:10px;
+    width:100%;
+    height:40vh;
+}
+.tablediv2 table{
+    width: 100%; /* Ensures the table takes full width of the container */
+    table-layout:fixed;
+}
+.tablediv2 table div img{
+    width:100%;
+    height:40vh;
+}
+.tablediv2 table td{
+    width: 350px; /* Sets a consistent width for each column */
+    padding: 0px 7px; /* Adds some padding around table cells */
+    vertical-align: top;
+}
+.maindiv4 .button01{
+    position: absolute; /* Fixed position relative to the viewport */
+    left:0px; /* Distance from the right edge of the viewport */
+    background-color:white;
+    color:blue;
+    border: none;
+    top:55%;
+    padding:15px 20px;
+    outline:none;
+    font-size:larger;
+    opacity:0.8;
+    border-radius:100%;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 2500;
+}
+.maindiv4 .button11{
+    position: absolute; /* Fixed position relative to the viewport */
+    right:0px; /* Distance from the right edge of the viewport */
+    background-color:white;
+    color:blue;
+    top:55%;
+    border: none;
+    padding:15px 20px;
+    outline:none;
+    opacity:0.8;
+    cursor: pointer;
+    border-radius:100%;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    font-size:larger;
+    z-index: 2000;
+}
+.tablediv2 table td div{
+    position:relative;
+    background-color:black;
+}
+.tablediv2 table td p{
+    position:absolute;
+    z-index:2000;
+    top:14%;
+    left:4%;
+    font-size:12px;
+    width:90%;
+    text-align:center;
+    color:white;
 }
