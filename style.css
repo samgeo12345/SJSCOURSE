@@ -510,6 +510,9 @@ label{
         background-color:white;
         border-radius:15px;
     }
+    .button0,.button1,.button01,.button11{
+        display:none;
+    }
 }
 @media(max-width:700px){
     .logindiv,#signindiv{
@@ -535,6 +538,38 @@ label{
         box-shadow:0px 0px 5px rgba(0,0,0,0.3);
         background-color:white;
         border-radius:15px;
+    }
+    .maindiv3 table td{
+        width: 300px; /* Sets a consistent width for each column */
+        padding: 0px 8px; /* Adds some padding around table cells */
+        vertical-align: top;
+    }
+    .maindiv3 table div{
+        width: 100%; /* Ensures course content fits within each cell */
+        height:55vh;
+        overflow:hidden;
+        border-radius:8px;
+        background-color:white;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    }
+    .maindiv3 table img{
+        height:25vh;
+        width:100%;
+    }
+    .tablediv2 table div{
+        overflow:hidden;
+        border-radius:10px;
+        width:100%;
+        height:30vh;
+    }
+    .tablediv2 table div img{
+        width:100%;
+        height:30vh;
+    }
+    .tablediv2 table td{
+        width: 350px; /* Sets a consistent width for each column */
+        padding: 0px 7px; /* Adds some padding around table cells */
+        vertical-align: top;
     }
 }
 @media(max-width:550px){
