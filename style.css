@@ -432,6 +432,14 @@ label{
     .navelements .options{
         margin-left:16%;
     }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:30%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
+    }
 }
 @media(max-width:900px){
     .navelements .options{
@@ -440,6 +448,14 @@ label{
     .navelements .logodiv{
         margin-left:-5%;
     }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:33%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
+    }
 }
 @media(max-width:850px){
     .navelements .options{
@@ -447,6 +463,14 @@ label{
     }
     .navelements{
         justify-content:space-around;
+    }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:35%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
     }
 }
 @media(max-width:800px){
@@ -478,6 +502,24 @@ label{
     .maindiv button{
         font-size:small;
     }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:37%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
+    }
+}
+@media(max-width:700px){
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:43%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
+    }
 }
 @media(max-width:600px){
     .navelements .options .bars{
@@ -486,6 +528,24 @@ label{
     .navelements .logodiv{
         margin-left:-5%;
     }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:50%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
+    }
+}
+@media(max-width:550px){
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:55%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
+    }
 }
 @media(max-width:500px){
     .navelements .options .bars{
@@ -493,6 +553,14 @@ label{
     }
     .navelements .logodiv{
         margin-left:-3%;
+    }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:60%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
     }
 }
 @media(max-width:400px){
@@ -504,5 +572,13 @@ label{
     }
     .maindiv div{
         width:95%;
+    }
+    .logindiv,#signindiv{
+        text-align:center;
+        padding:3%;
+        width:80%;
+        box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+        background-color:white;
+        border-radius:15px;
     }
 }
