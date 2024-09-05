@@ -486,21 +486,6 @@ label{
     .navelements .logodiv{
         margin-left:-5%;
     }
-    .tablediv2 table td{
-        width: 300px; /* Sets a consistent width for each column */
-        padding: 0px 7px; /* Adds some padding around table cells */
-        vertical-align: top;
-    }
-    .tablediv2 table td p{
-        position:absolute;
-        z-index:2000;
-        top:8%;
-        left:4%;
-        font-size:10px;
-        width:90%;
-        text-align:center;
-        color:white;
-    }
 }
 @media(max-width:500px){
     .navelements .options .bars{
