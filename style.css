@@ -162,7 +162,6 @@ label{
     z-index:2000;
     position:fixed;
     display:flex;
-    flex-wrap:wrap;
     background-color:white;
     justify-content:center;
     box-shadow:0px 0px 5px rgba(0,0,0,0.5);
@@ -190,6 +189,9 @@ label{
     text-decoration:none;
     color:black;
 }
+.navelements .options .bars{
+    display:none;
+}
 .allcontents{
     margin:auto;
     width:98%;
@@ -197,27 +199,18 @@ label{
 }
 .maindiv{
     overflow:hidden;
-    position: relative;
-    height:100vh;
+    background-image:url("img/emile-perron-xrVDYZRGdw4-unsplash.jpg");
     border-radius:10px;
-    background-color:black;
-}
-.maindiv img{
-    height:100vh;
-    opacity:0.7;
-    width:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 .maindiv div{
-    position:absolute;
     width:50%;
+    margin-top:10%;
+    padding-bottom:10%;
     align-items:center;
     margin-left:4%;
-    top:20%;
-}
-@media(max-width:800px){
-    .maindiv div{
-        width:100%;
-    }
 }
 .maindiv div h1,.maindiv div p{
     color:white;
@@ -245,8 +238,45 @@ label{
     color:white;
 }
 .maindiv3{
+    margin-top:2%;
     padding:2%;
+    border-radius:10px;
+    background-color:whitesmoke;
     position:relative;
+}
+/* Style for the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  /* Style for the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+  
+  /* Style for the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+    border: 3px solid #f1f1f1; /* Space around the thumb */
+  }
+  
+  /* Style for the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb when hovered */
+  }
+.tablediv::-webkit-scrollbar-thumb,.tablediv2::-webkit-scrollbar-thumb{
+    border:2px none transparent;
+    border-radius:15px;
+    background-color:rgba(100,100,100,0.4);
+    border-width:3px;
+}
+.tablediv::-webkit-scrollbar-track,.tablediv2::-webkit-scrollbar-track{
+    border-radius:15px;
+    background-color:rgba(255,255,255,0.4);
+}
+.maindiv3 h1 hr{
+    border-color:black;
 }
 .maindiv2 div{
     margin-left:2%;
@@ -256,7 +286,7 @@ label{
     height:70vh;
     overflow:hidden;
     border-radius:8px;
-    background-color:whitesmoke;
+    background-color:white;
     box-shadow:0px 0px 5px rgba(0,0,0,0.5);
 }
 .maindiv3 table{
@@ -322,7 +352,13 @@ label{
 }
 .maindiv4{
     padding:2%;
+    margin-top:2%;
+    border-radius:10px;
+    background:linear-gradient(135deg,blueviolet,deeppink);
     position:relative;
+}
+.maindiv4 h1{
+    color:white;
 }
 .tablediv2{
     overflow-x:scroll;
@@ -391,4 +427,97 @@ label{
     width:90%;
     text-align:center;
     color:white;
+}
+@media(max-width:1000px){
+    .navelements .options{
+        margin-left:16%;
+    }
+}
+@media(max-width:900px){
+    .navelements .options{
+        margin-left:14%;
+    }
+    .navelements .logodiv{
+        margin-left:-5%;
+    }
+}
+@media(max-width:850px){
+    .navelements .options{
+        margin-left:-5%;
+    }
+    .navelements{
+        justify-content:space-around;
+    }
+}
+@media(max-width:800px){
+    html{
+        font-size:small;
+    }
+    .maindiv div{
+        width:90%;
+    }
+    .maindiv div p{
+        font-size:small;
+    }
+    .navelements{
+        justify-content: space-around;
+    }
+    .navelements .options .opt{
+        display:none;
+    }
+    .navelements .options .bars{
+        display:block;
+        margin-left:120%;
+    }
+    .navelements img{
+        block-size:55px;
+    }
+    .navelements .logodiv{
+        margin-left:-8%;
+    }
+    .maindiv button{
+        font-size:small;
+    }
+}
+@media(max-width:600px){
+    .navelements .options .bars{
+        margin-left:110%;
+    }
+    .navelements .logodiv{
+        margin-left:-5%;
+    }
+    .tablediv2 table td{
+        width: 300px; /* Sets a consistent width for each column */
+        padding: 0px 7px; /* Adds some padding around table cells */
+        vertical-align: top;
+    }
+    .tablediv2 table td p{
+        position:absolute;
+        z-index:2000;
+        top:8%;
+        left:4%;
+        font-size:10px;
+        width:90%;
+        text-align:center;
+        color:white;
+    }
+}
+@media(max-width:500px){
+    .navelements .options .bars{
+        margin-left:100%;
+    }
+    .navelements .logodiv{
+        margin-left:-3%;
+    }
+}
+@media(max-width:400px){
+    .navelements .options .bars{
+        margin-left:80%;
+    }
+    .navelements .logodiv{
+        margin-left:2%;
+    }
+    .maindiv div{
+        width:95%;
+    }
 }
