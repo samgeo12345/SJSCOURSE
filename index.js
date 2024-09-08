@@ -176,3 +176,22 @@ document.addEventListener("DOMContentLoaded",function(){
         ps5.innerHTML="";
     });
 });
+document.addEventListener("DOMContentLoaded",function(){
+    const menublock=document.getElementById("menublock");
+    const menuoptions=document.getElementById("menuoptions");
+    const bar=document.getElementById("bar");
+    menublock.addEventListener("click",function(){
+        if(menuoptions.style.display=="block"){
+            menuoptions.style.display="none";
+            bar.style.background="";
+            menublock.style.color="black";
+            menublock.innerHTML='<i class="fas fa-bars"></i>';
+        }
+        else{
+            menuoptions.style.display="block";
+            bar.style.background="linear-gradient(110deg,blue,lightblue)";
+            menublock.style.color="white";
+            menublock.innerHTML='<i class="fa-solid fa-xmark"></i>';
+        }
+    });
+});

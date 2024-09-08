@@ -193,25 +193,25 @@ label{
     display:none;
 }
 .navelements2{
-    bottom:0;
-    width:100%;
+    top:11%;
+    left:50%;
+    width:55%;
     z-index:2000;
     position:fixed;
     padding:2%;
     display:none;
+    border-bottom-left-radius:10px;
     background-color:white;
-    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
 }
 .navelements2 .options{
-    display:flex;
-    margin:auto;
-    margin-left:23%;
-    width:50%;
-    justify-content:center;
+    margin-left:auto;
+    margin-right:18%;
+    text-align:right;
+    width:80%;
 }
 .navelements2 .options div{
     border-radius:35px;
-    padding:5%;
+    padding:10%;
 }
 .navelements2 .options div:hover{
     background:linear-gradient(110deg,blue,lightblue);
@@ -505,6 +505,11 @@ label{
         border-radius:15px;
     }
 }
+@media(max-width:801px){
+    .navelements2{
+        display:none;
+    }
+}
 @media(max-width:800px){
     html{
         font-size:small;
@@ -518,21 +523,29 @@ label{
     .navelements{
         justify-content: space-around;
     }
+    .navelements2 .options div{
+        border-radius:50px;
+    }
     .navelements .options .opt{
         display:none;
     }
     .navelements .options .bars{
         display:block;
         margin-left:120%;
+        border-radius:5px;
+        padding:0px 5px;
+    }
+    .navelements .options .bars:hover{
+        background:none;
+    }
+    .navelements .options .bars a:hover{
+        color:unset;
     }
     .navelements img{
         block-size:55px;
     }
     .navelements .logodiv{
         margin-left:-8%;
-    }
-    .navelements2{
-        display:block;
     }
     .maindiv button{
         font-size:small;
@@ -631,9 +644,6 @@ label{
         box-shadow:0px 0px 5px rgba(0,0,0,0.3);
         background-color:white;
         border-radius:15px;
-    }
-    .navelements2 a{
-        font-size:small;
     }
 }
 @media(max-width:400px){
