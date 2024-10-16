@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const storedPassword = localStorage.getItem("passwordss");
 
             if (user === storedEmail && pass === storedPassword) {
+                localStorage.setItem("loggedInUser", user);
                 window.location.href = "main.html";
             } else {
                 username.classList.add("user-input");
@@ -83,6 +84,12 @@ document.addEventListener("DOMContentLoaded", function() {
         loginform.style.display = "block";
         signindiv.style.display = "none";
     });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (loggedInUser) {
+        document.getElementById("namess").textContent = loggedInUser;
+    }
 });
 document.addEventListener("DOMContentLoaded",function(){
     const left=document.getElementById("left");

@@ -227,7 +227,7 @@ label{
 .allcontents{
     margin:auto;
     width:98%;
-    margin-top:1%;
+    margin-top:2%;
 }
 .maindiv{
     overflow:hidden;
@@ -236,6 +236,7 @@ label{
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
 }
 .maindiv div{
     width:50%;
@@ -275,6 +276,7 @@ label{
     border-radius:10px;
     background-color:whitesmoke;
     position:relative;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
 }
 /* Style for the scrollbar track */
 ::-webkit-scrollbar {
@@ -388,6 +390,7 @@ label{
     border-radius:10px;
     background:linear-gradient(135deg,blueviolet,deeppink);
     position:relative;
+    box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
 }
 .maindiv4 h1{
     color:white;
@@ -459,6 +462,53 @@ label{
     width:90%;
     text-align:center;
     color:white;
+}
+.bottominfo{
+    display:flex;
+    justify-content:center;
+    padding:1% 2%;
+    margin-top:2%;
+}
+.bottominfo a{
+    text-decoration:none;
+    color:dimgray;
+    font-size:12px;
+}
+.bottominfo a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.bottominfo div{
+    margin:2%;
+}
+.bottominfo i{
+    font-size:x-large;
+    color:dimgray;
+    transition:.3s ease-in-out;
+}
+.bottominfo i:hover{
+    color:blue;
+    transform:translateY(-4px);
+}
+.bottominfo h3{
+    text-align:right;
+    color:dimgray;
+}
+.bottominfo h3 hr{
+    border:2.5px solid;
+    outline:none;
+    color:blue;
+}
+.bottomall{
+    background-color:whitesmoke;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+}
+.bottomall p{
+    text-align:center;
+    font-size:13px;
+    margin-top:0;
+    padding-bottom:1%;
+    color:dimgray;
 }
 @media(max-width:1000px){
     .navelements .options{
