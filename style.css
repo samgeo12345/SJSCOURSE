@@ -99,7 +99,7 @@ label{
     width:100%;
     block-size:40px;
     color:white;
-    background:linear-gradient(160deg,blue,lightblue);
+    background:linear-gradient(160deg,blue,dodgerblue);
     outline:none;
     border-style:none;
     font-weight:bold;
@@ -129,7 +129,7 @@ label{
 }
 .loginbuttondiv2 button:hover{
     box-shadow:0px 5px 5px rgba(0,0,0,0.3);
-    background:linear-gradient(160deg,blue,lightblue);
+    background:linear-gradient(160deg,blue,dodgerblue);
     border-style:none;
     color:white;
 }
@@ -179,7 +179,7 @@ label{
     margin-left:1%;
 }
 .navelements .options div:hover{
-    background:linear-gradient(110deg,blue,lightblue);
+    background:linear-gradient(110deg,blue,dodgerblue);
 }
 .navelements .options a:hover{
     color:white;
@@ -201,7 +201,8 @@ label{
     padding:2%;
     display:none;
     border-bottom-left-radius:10px;
-    background-color:white;
+    background-color:rgba(255,255,255,0.7);
+    backdrop-filter:blur(8px);
 }
 .navelements2 .options{
     margin-left:auto;
@@ -214,7 +215,7 @@ label{
     padding:10%;
 }
 .navelements2 .options div:hover{
-    background:linear-gradient(110deg,blue,lightblue);
+    background:linear-gradient(110deg,blue,dodgerblue);
 }
 .navelements2 .options a:hover{
     color:white;
@@ -248,6 +249,9 @@ label{
 .maindiv div h1,.maindiv div p{
     color:white;
 }
+.maindiv span{
+    color:silver;
+}
 .maindiv div p{
     font-size:14px;
     color:whitesmoke;
@@ -258,12 +262,12 @@ label{
     border-radius:25px;
     color:white;
     border-style:none;
-    background:linear-gradient(110deg,blue,skyblue);
+    background:linear-gradient(110deg,blue,dodgerblue);
     font-family:'Poppins',Verdana;
     cursor:pointer;
 }
 .maindiv2{
-    background:linear-gradient(135deg,blue,skyblue);
+    background:linear-gradient(135deg,blue,dodgerblue);
     box-shadow:0px 0px 1.5px rgba(0,0,0,0.9);
     padding:2%;
     margin-top:2%;
@@ -510,6 +514,53 @@ label{
     padding-bottom:1%;
     color:dimgray;
 }
+
+/*course section*/
+
+.coursediv{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:95%;
+    margin:auto;
+    gap:20px;
+}
+.courses{
+    overflow:hidden;
+    text-align:center;
+    flex:1 1 calc(33.333% - 30px);
+}
+.courses a{
+    color:gray;
+}
+.courses img{
+    width:100%;
+}
+.courses .cp{
+    font-weight:bold;
+}
+.courses button{
+    width:48%;
+    padding:2%;
+    outline:none;
+    font-weight:bold;
+    border-radius:30px;
+    font-family:'Poppins',Verdana;
+}
+.courses .coursebutton1{
+    border-style:solid;
+    background-color:white;
+    color:blue;
+    border-color:blue;
+}
+.courses .coursebutton2{
+    border-style:none;
+    background:linear-gradient(160deg,blue,dodgerblue);
+    color:white;
+}
+
+
+
 @media(max-width:1000px){
     .navelements .options{
         margin-left:16%;
@@ -612,6 +663,11 @@ label{
         display:none;
     }
 }
+@media(max-width:768px){
+    .courses{
+        flex:1 1 calc(50% - 20px);
+    }
+}
 @media(max-width:700px){
     .logindiv,#signindiv{
         text-align:center;
@@ -681,6 +737,9 @@ label{
     }
 }
 @media(max-width:500px){
+    .courses{
+        flex:1 1 calc(100%);
+    }
     .navelements .options .bars{
         margin-left:100%;
     }
