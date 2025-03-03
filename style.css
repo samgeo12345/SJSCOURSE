@@ -250,7 +250,8 @@ label{
     color:white;
 }
 .maindiv span{
-    color:silver;
+    color:black;
+    filter:drop-shadow(0px 0px 1px rgba(255,255,255,0.9));
 }
 .maindiv div p{
     font-size:14px;
@@ -470,6 +471,7 @@ label{
 .bottominfo{
     display:flex;
     justify-content:center;
+    flex-wrap:wrap;
     padding:1% 2%;
     margin-top:2%;
 }
@@ -558,6 +560,33 @@ label{
     background:linear-gradient(160deg,blue,dodgerblue);
     color:white;
 }
+.moresdiv{
+    text-align:center;
+}
+.moresdiv a{
+    text-decoration:none;
+    color:blue;
+}
+.syllabusdiv{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.syllabus{
+    padding:2%;
+    flex:1 1 calc(33.333% - 30px);
+    border-radius:8px;
+    margin:1%;
+    background:linear-gradient(135deg,whitesmoke,white);
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+}
+.syllabus a{
+    text-decoration:none;
+    display:flex;
+    color:blue;
+    justify-content:right;
+}
+
 
 
 
@@ -667,6 +696,10 @@ label{
     .courses{
         flex:1 1 calc(50% - 20px);
     }
+    .syllabus{
+        flex:1 1 calc(50% - 20px);
+        margin:2%;
+    }
 }
 @media(max-width:700px){
     .logindiv,#signindiv{
@@ -677,6 +710,12 @@ label{
         background-color:white;
         border-radius:15px;
     }
+    .bottominfo{
+        text-align:center;
+    }
+    .bottominfo h3{
+        text-align:center;
+    }
 }
 @media(max-width:600px){
     .navelements .options .bars{
@@ -684,6 +723,9 @@ label{
     }
     .navelements .logodiv{
         margin-left:-5%;
+    }
+    .syllabus{
+        padding:4%;
     }
     .logindiv,#signindiv{
         text-align:center;
@@ -736,9 +778,18 @@ label{
         border-radius:15px;
     }
 }
+@media(max-width:450px){
+    .bottominfo{
+        flex-direction: column;
+    }
+}
 @media(max-width:500px){
     .courses{
         flex:1 1 calc(100%);
+    }
+    .syllabus{
+        flex:1 1 calc(100%);
+        margin:3%;
     }
     .navelements .options .bars{
         margin-left:100%;
@@ -761,6 +812,9 @@ label{
     }
     .navelements .logodiv{
         margin-left:2%;
+    }
+    .syllabus{
+        padding:6%;
     }
     .maindiv div{
         width:95%;
