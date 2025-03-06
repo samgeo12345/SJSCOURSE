@@ -573,18 +573,25 @@ label{
     justify-content:center;
 }
 .syllabus{
-    padding:2%;
     flex:1 1 calc(33.333% - 30px);
     border-radius:8px;
     margin:1%;
-    background:linear-gradient(135deg,whitesmoke,white);
+    overflow:hidden;
     box-shadow:0px 0px 1px rgba(0,0,0,0.9);
 }
 .syllabus a{
+    padding:2%;
     text-decoration:none;
     display:flex;
     color:blue;
     justify-content:right;
+}
+.syllabus h4,.syllabus p{
+    width:90%;
+    margin:auto;
+}
+.syllabus img{
+    width:100%;
 }
 
 
@@ -724,9 +731,6 @@ label{
     .navelements .logodiv{
         margin-left:-5%;
     }
-    .syllabus{
-        padding:4%;
-    }
     .logindiv,#signindiv{
         text-align:center;
         padding:3%;
@@ -812,9 +816,6 @@ label{
     }
     .navelements .logodiv{
         margin-left:2%;
-    }
-    .syllabus{
-        padding:6%;
     }
     .maindiv div{
         width:95%;
