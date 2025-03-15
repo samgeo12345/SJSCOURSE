@@ -576,8 +576,8 @@ label{
     flex:1 1 calc(33.333% - 30px);
     border-radius:8px;
     margin:1%;
+    box-shadow:0px 0px 15px 5px rgba(0,0,0,0.2);
     overflow:hidden;
-    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
 }
 .syllabus a{
     padding:2%;
@@ -592,6 +592,25 @@ label{
 }
 .syllabus img{
     width:100%;
+}
+.assessment{
+    padding:2%;
+    margin:2%;
+    box-shadow:0px 0px 15px 5px rgba(0,0,0,0.1);
+    border-radius:8px;
+}
+.assessment div{
+    text-align:right;
+}
+.assessment button{
+    padding:1% 2%;
+    outline:none;
+    font-weight:bold;
+    border-radius:30px;
+    border-style:none;
+    font-family:'Poppins',Verdana;
+    background:linear-gradient(160deg,blue,dodgerblue);
+    color:white;
 }
 
 
@@ -707,6 +726,13 @@ label{
         flex:1 1 calc(50% - 20px);
         margin:2%;
     }
+    .assessment{
+        padding:4%;
+        margin:4%;
+    }
+    .assessment button{
+        padding:2% 2%;
+    }
 }
 @media(max-width:700px){
     .logindiv,#signindiv{
@@ -794,6 +820,13 @@ label{
     .syllabus{
         flex:1 1 calc(100%);
         margin:3%;
+    }
+    .assessment{
+        padding:5%;
+        margin:5%;
+    }
+    .assessment button{
+        padding:3% 3%;
     }
     .navelements .options .bars{
         margin-left:100%;
